@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_d12dcc211ee6436b87d5b9d8a2dee914 {
+                #map_04ab8f546c794ffab1f13b7be1594a3f {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -35,13 +35,13 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_d12dcc211ee6436b87d5b9d8a2dee914" ></div>
+            <div class="folium-map" id="map_04ab8f546c794ffab1f13b7be1594a3f" ></div>
         
 </body>
 <script>    
     
-            var map_d12dcc211ee6436b87d5b9d8a2dee914 = L.map(
-                "map_d12dcc211ee6436b87d5b9d8a2dee914",
+            var map_04ab8f546c794ffab1f13b7be1594a3f = L.map(
+                "map_04ab8f546c794ffab1f13b7be1594a3f",
                 {
                     center: [55.753215, 37.622504],
                     crs: L.CRS.EPSG3857,
@@ -55,9 +55,34 @@
 
         
     
-            var tile_layer_c0df399f906a43cdabad56a4ed4bf433 = L.tileLayer(
+            var tile_layer_6aba8822be744755a1279b3c8e92902e = L.tileLayer(
                 "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_d12dcc211ee6436b87d5b9d8a2dee914);
+            ).addTo(map_04ab8f546c794ffab1f13b7be1594a3f);
         
+    
+            var marker_448b17fb9e164fae80b69951cfeca8fe = L.marker(
+                [55.753215, 37.622504],
+                {}
+            ).addTo(map_04ab8f546c794ffab1f13b7be1594a3f);
+        
+    
+            var icon_ac16b6495c8e4310909df0db7142ca29 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_448b17fb9e164fae80b69951cfeca8fe.setIcon(icon_ac16b6495c8e4310909df0db7142ca29);
+        
+    
+        var popup_104ef3c9861b4b58909dda93874ad70b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1529b3e3fd8d4d9dac17b28050cda658 = $(`<div id="html_1529b3e3fd8d4d9dac17b28050cda658" style="width: 100.0%; height: 100.0%;">Moscow</div>`)[0];
+            popup_104ef3c9861b4b58909dda93874ad70b.setContent(html_1529b3e3fd8d4d9dac17b28050cda658);
+        
+
+        marker_448b17fb9e164fae80b69951cfeca8fe.bindPopup(popup_104ef3c9861b4b58909dda93874ad70b)
+        ;
+
+        
+    
 </script>
